@@ -72,12 +72,12 @@
     display: flex;
     align-items: flex-start;
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
 }
 
 .message .message__content {
-    width: 80%;
+    width: 100%;
 }
 
 .incoming-message {
@@ -85,7 +85,7 @@
 }
 
 .sent-message {
-    align-self:flex-end;
+    align-self: flex-end;
 }
 .incoming-message img {
     width:30px;
@@ -94,23 +94,30 @@
 }
 
 .message .message__bubble {
+    display: block;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
     border-radius: 20px;
     padding: 10px 20px;
+    font-weight: 600;
 }
 
 .incoming-message .message__author {
     margin-bottom: 5px;
     display: block;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .incoming-message .message__bubble {
     border-top-left-radius: 0px;
+    color: white;
+    background-image:linear-gradient(to left, #7b4397, #dc2430);
+    margin-left: 5px;
 }
 
 .sent-message .message__bubble {
     border-top-right-radius: 0px;
+    background-image:linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
 }
