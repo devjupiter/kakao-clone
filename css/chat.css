@@ -1,15 +1,26 @@
-.chat-screen {
+.header-wrapper {
+    position: fixed;
+    top: 0px;
+    width:100%;
     background-color: white;
-    min-height: 100vh;
+    padding: 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
 }
 
 .chats-body {
-    padding: 0px;
+    padding: 10px 0px;
+    padding-top: 100px;
+    min-height: 1000vh;
 }
 
 .chats-body .header, 
 .chats-body .status-bar {
     padding: 0px 20px;
+}
+
+.chats-body {
+    background-color: white;
 }
 
 .chat__write {
